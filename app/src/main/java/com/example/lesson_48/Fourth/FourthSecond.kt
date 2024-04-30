@@ -61,7 +61,7 @@ class FourthSecond : AppCompatActivity() {
             }
         }
         binding.close.setOnClickListener {
-            finish()git remote add origin https://github.com/Saymon2401/lesson48.git
+            finish()
         }
     }
 }
