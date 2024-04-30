@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fourth.FourthFirst">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/burger"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:fontFamily="@font/extra"
+            android:gravity="center"
+            android:text="KUN.UZ"
+            android:textColor="#3F51B5"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/left"
+            android:drawableRight="@drawable/right"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/burger">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/medium"
+                android:textColor="@color/black"
+                android:text="Osiyo kubogi U23. O‘zbekiston Indoneziyani mag‘lub etib, o‘z tarixida ilk marta Olimpiadaga yo‘llanma oldi"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="@id/card1"
+                app:layout_constraintRight_toLeftOf="@id/img1"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2019-04-12 | 10:31"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/regular"
+                app:layout_constraintTop_toBottomOf="@id/text1"
+                app:layout_constraintLeft_toLeftOf="@id/card1"/>
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:src="@drawable/img_4"
+                app:layout_constraintTop_toTopOf="@id/card1"
+                app:layout_constraintBottom_toBottomOf="@id/card1"
+                app:layout_constraintLeft_toRightOf="@id/text1"
+                app:layout_constraintRight_toRightOf="@id/card1"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/line"
+            app:layout_constraintTop_toBottomOf="@id/card1"
+            android:orientation="horizontal" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card1">
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/medium"
+                android:textColor="@color/black"
+                android:text="G‘azo sektoridagi shifoxona hududidan ommaviy qabrlar topildi"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/img2"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2019-04-12 | 10:31"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/regular"
+                app:layout_constraintTop_toBottomOf="@id/text2"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:src="@drawable/img_1"
+                app:layout_constraintTop_toTopOf="@id/card2"
+                app:layout_constraintBottom_toBottomOf="@id/card2"
+                app:layout_constraintLeft_toRightOf="@id/text2"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/line"
+            app:layout_constraintTop_toBottomOf="@id/card2"
+            android:orientation="horizontal" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card2">
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/medium"
+                android:textColor="@color/black"
+                android:text="Amerika universitetlari Isroilga qarshi namoyishlardan larzaga kelmoqda. Fotosuratlar"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/img3"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2019-04-12 | 10:31"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/regular"
+                app:layout_constraintTop_toBottomOf="@id/text3"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:src="@drawable/img_2"
+                app:layout_constraintTop_toTopOf="@id/card3"
+                app:layout_constraintBottom_toBottomOf="@id/card3"
+                app:layout_constraintLeft_toRightOf="@id/text3"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/line"
+            app:layout_constraintTop_toBottomOf="@id/card3"
+            android:orientation="horizontal" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card3">
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/medium"
+                android:textColor="@color/black"
+                android:text="18 mamlakat yetakchilari HAMASni garovdagilarni ozod qilishga chaqirdi"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/img4"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2019-04-12 | 10:31"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/regular"
+                app:layout_constraintTop_toBottomOf="@id/text4"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:src="@drawable/img_3"
+                app:layout_constraintTop_toTopOf="@id/card4"
+                app:layout_constraintBottom_toBottomOf="@id/card4"
+                app:layout_constraintLeft_toRightOf="@id/text4"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/line"
+            app:layout_constraintTop_toBottomOf="@id/card4"
+            android:orientation="horizontal" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card4">
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/medium"
+                android:textColor="@color/black"
+                android:text="Saudiyadagi sammitda Isroil va Hamas o‘rtasida muzokaralarni tiklashga harakat qilinmoqda"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/img5"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2019-04-12 | 10:31"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/regular"
+                app:layout_constraintTop_toBottomOf="@id/text5"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:src="@drawable/img"
+                app:layout_constraintTop_toTopOf="@id/card5"
+                app:layout_constraintBottom_toBottomOf="@id/card5"
+                app:layout_constraintLeft_toRightOf="@id/text5"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:id="@+id/line5"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/line"
+            app:layout_constraintTop_toBottomOf="@id/card5"
+            android:orientation="horizontal" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

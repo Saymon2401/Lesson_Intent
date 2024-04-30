@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fourth.FourthSecond">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/burger"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:fontFamily="@font/extra"
+            android:gravity="center"
+            android:text="KUN.UZ"
+            android:textColor="#3F51B5"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:drawableRight="@drawable/right"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/burger"
+            android:src="@drawable/baseline_keyboard_backspace_24"/>
+        <TextView
+            android:id="@+id/mainTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:text="Osiyo kubogi U23. O‘zbekiston Indoneziyani mag‘lub etib, o‘z tarixida ilk marta Olimpiadaga yo‘llanma oldi"
+            app:layout_constraintTop_toBottomOf="@id/burger"/>
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:src="@drawable/img_4"
+            app:layout_constraintTop_toBottomOf="@id/mainTxt"/>
+        <TextView
+            android:id="@+id/secondText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/img"
+            android:text="Qatarda o‘tayotgan Osiyo kubogi U23 yarimfinali doirasida O‘zbekiston olimpiya jamoasi Indoneziyani mag‘lub etib, finalga chiqish bilan birga o‘z tarixida ilk bor Olimpiadaga yo‘llanma oldi. Temur Kapadze shogirdlari Parijda o‘tadigan har to‘rt yillikning eng yirik sport musobaqasida ishtirok etishadi. Vakillarimiz finalda 3 may kuni Iroq – Yaponiya o‘yini g‘olibiga qarshi saf tortadi.
+Dohada o‘tgan yarimfinal bahsining birinchi bo‘limida vakillarimiz qator imkoniyatlarga ega bo‘lishsa-da, hisob ochilmadi. Ikkinchi bo‘limda Jasurbek Jaloliddinov va Husayn Norchayev zaxiradan maydonga tushirilgach, hujumkorlik oshdi."
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/black"/>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
